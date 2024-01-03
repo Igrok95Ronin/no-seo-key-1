@@ -1,0 +1,174 @@
+* {
+    box-sizing: border-box;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.containerP0 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+body {
+    margin: auto;
+    padding: 0;
+    font:
+        16px Helvetica,
+        Arial,
+        sans-serif;
+    max-width: 1920px;
+    min-width: 320px;
+    color: #000;
+}
+
+$mainColor: #0d2f46;
+$btnColorFixed: $mainColor;
+
+@mixin h1Title {
+    color: #fff;
+    background-color: $mainColor;
+    padding: 5px;
+    padding-left: 60px;
+    font-weight: 700;
+    font-size: clamp(34px, 5vw, 45px);
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        background-image: url("../img/titleIcon.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 50px;
+        height: 42px;
+        left: 5px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+@mixin h2Title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: clamp(22px, 4vw, 32px);
+}
+@mixin btn {
+    background-color: $mainColor;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 20px;
+    padding: 10px 10px 10px 40px;
+    border-radius: 5px;
+    transition: 0.3s;
+    span {
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            background-image: url("../icons/telephone-fill.svg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 25px;
+            height: 25px;
+            left: -30px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+    &:hover {
+        color: #fff;
+        background-color: #115f94;
+    }
+}
