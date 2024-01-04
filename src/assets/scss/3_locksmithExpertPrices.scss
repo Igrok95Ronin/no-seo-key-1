@@ -1,0 +1,64 @@
+.locksmithExpertPrices {
+    margin-top: 50px;
+}
+.locksmithExpertPrices__box {
+}
+.locksmithExpertPrices__title {
+    @include h2Title;
+    color: #000;
+    background-color: transparent;
+}
+.locksmithExpertPrices__wrapper {
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    gap: 20px;
+}
+.locksmithExpertPrices__inner {
+    background-color: $mainColor;
+    color: #fff;
+    text-align: center;
+    padding: 20px 10px;
+    border-radius: 10px;
+}
+.locksmithExpertPrices__subTitle {
+    font-weight: 700;
+    font-size: clamp(18px, 4vw, 28px);
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding-right: 30px;
+    &::before {
+        content: "";
+        position: absolute;
+        background-image: url("../img/check.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 20px;
+        height: 20px;
+        right: 0;
+        top: -10px;
+    }
+}
+.locksmithExpertPrices__inner:last-child {
+    font-weight: 700;
+    font-size: clamp(18px, 4vw, 28px);
+}
+.locksmithExpertPrices__txt {
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
+    padding-left: 50px;
+    &::before {
+        content: "";
+        position: absolute;
+        background-image: url("../img/clock.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 40px;
+        height: 40px;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
