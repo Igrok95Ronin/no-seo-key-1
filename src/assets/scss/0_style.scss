@@ -138,6 +138,9 @@ $btnColorFixed: $mainColor;
     }
 }
 @mixin h2Title {
+    color: #fff;
+    background-color: $mainColor;
+    padding: 5px;
     text-align: center;
     margin-bottom: 20px;
     font-weight: 700;
@@ -171,4 +174,8 @@ $btnColorFixed: $mainColor;
         color: #fff;
         background-color: #115f94;
     }
+}
+@mixin txt {
+    padding: 0 10px;
+    line-height: 20px;
 }

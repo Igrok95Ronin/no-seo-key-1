@@ -1,0 +1,24 @@
+.locksmithOslo {
+    margin-top: 50px;
+}
+.locksmithOslo__box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.locksmithOslo__left {
+    max-width: 100%;
+    max-height: 100%;
+}
+.locksmithOslo__img {
+    width: 100%;
+    height: 100%;
+}
+.locksmithOslo__right {
+}
+.locksmithOslo__title {
+    @include h2Title;
+}
+.locksmithOslo__txt {
+    @include txt;
+}
